@@ -1,4 +1,4 @@
-.ikea-good {
+.ikea-goods {
     position: absolute;
     color:#393939;
     font-family: 'GT Eesti Pro Text', sans-serif;
@@ -42,8 +42,10 @@ body {
   .embla__slide {
     position: relative;
     flex: 0 0 100%;
-    border: 1px solid black;
     height: 800px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 
   .embla__button {
