@@ -1,7 +1,7 @@
 var imgArray = [];
-for (var i = 0; i < 19; i++) {
+for (var i = 0; i < 17; i++) {
     var imgNumber = i + 1 >= 10 ? i + 1 : '0' + (i + 1); 
-    var imgPath = 'data/lack-1/lack ' + imgNumber + '.png'
+    var imgPath = 'data/lack-1/lack-' + imgNumber + '.png'
     imgArray.push(imgPath)
 }
 
