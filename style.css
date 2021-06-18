@@ -17,6 +17,7 @@
     margin-top: 0%;
     margin-left: 50%;
     z-index: 0;
+    margin-bottom: 0;
 }
 
 * {
@@ -25,6 +26,10 @@
 
 .title{
     margin: 5px;
+    margin-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    margin-bottom: 0;
 }
 
 
@@ -35,18 +40,30 @@ body {
 .embla {
     overflow: hidden;
     position: relative;
+    margin-left: 20%;
+    margin-right: 20%;
   }
   .embla__container {
     display: flex;
+    margin-left: 0;
+    margin-right: 0;
   }
   .embla__slide {
     position: relative;
     flex: 0 0 100%;
-    height: 800px;
+    margin-left: 0;
+    margin-right: 0;
+    height: calc(100vh - 66px) ;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
   }
+
+  .embla__slide img {
+    height: 100%;
+    object-fit: contain;
+  }
+
 
   .embla__button {
     outline: 0;
@@ -77,9 +94,43 @@ body {
   }
   
   .embla__button--prev {
-    left: 27px;
+    left: 8%;
   }
   
   .embla__button--next {
-    right: 27px;
+    right: 8%;
   }
+
+  .home-button {
+    outline: 0;
+    cursor: pointer;
+    background-color: transparent;
+    touch-action: manipulation;
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    position: fixed;
+    z-index: -1;
+  } 
+
+.info {
+  /* width: 300px;
+  height: 300px;   
+  position: absolute;
+  top: 10vw;
+  left: 50%;
+  transform: translate(-50%); */
+  
+  border: 4px solid yellow; 
+  color: transparent;
+  transition: color 0.1s ease, background-color 0.1s ease;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info:hover {
+  background-color: white;
+  color: black;
+}
