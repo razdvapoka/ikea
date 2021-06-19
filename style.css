@@ -1,130 +1,130 @@
-.ikea-goods {
-    position: absolute;
-    color:#393939;
-    font-family: 'GT Eesti Pro Text', sans-serif;
-    font-weight: normal;
-    font-size: 300%;
-    margin-top: 0%;
-    z-index: 2;
-  }
-
-.location {    
-    position: relative;
-    color:#393939;
-    font-family: 'GT Eesti Pro Text', sans-serif;
-    font-weight: normal;
-    font-size: 300%;
-    margin-top: 0%;
-    margin-left: 50%;
-    z-index: 0;
-    margin-bottom: 0;
-}
-
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-.title{
-    margin: 5px;
-    margin-top: 5px;
-    padding-bottom: 5px;
-    display: flex;
-    margin-bottom: 0;
+.ikea-goods {
+  /* position: absolute; */
+  color: #393939;
+  font-family: "GT Eesti Pro Text", sans-serif;
+  font-weight: normal;
+  font-size: 300%;
+  margin-top: 0%;
+  z-index: 2;
 }
 
+.location {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #393939;
+  font-family: "GT Eesti Pro Text", sans-serif;
+  font-weight: normal;
+  font-size: 300%;
+  margin-top: 0%;
+  margin-bottom: 0;
+}
+
+.title {
+  margin: 5px;
+  margin-top: 5px;
+  padding-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0;
+  position: relative;
+}
 
 body {
-    margin: 0%;
+  margin: 0%;
 }
 
 .embla {
-    overflow: hidden;
-    position: relative;
-    margin-left: 20%;
-    margin-right: 20%;
-  }
-  .embla__container {
-    display: flex;
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .embla__slide {
-    position: relative;
-    flex: 0 0 100%;
-    margin-left: 0;
-    margin-right: 0;
-    height: calc(100vh - 66px) ;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
+  overflow: hidden;
+  position: relative;
+  margin-left: 20%;
+  margin-right: 20%;
+  border: 1px solid black;
+}
+.embla__container {
+  display: flex;
+  margin-left: 0;
+  margin-right: 0;
+}
+.embla__slide {
+  position: relative;
+  flex: 0 0 100%;
+  margin-left: 0;
+  margin-right: 0;
+  height: calc(100vh - 66px);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 
-  .embla__slide img {
-    height: 100%;
-    object-fit: contain;
-  }
+.embla__slide img {
+  height: 100%;
+  object-fit: contain;
+}
 
+.embla__button {
+  outline: 0;
+  cursor: pointer;
+  background-color: transparent;
+  touch-action: manipulation;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
 
-  .embla__button {
-    outline: 0;
-    cursor: pointer;
-    background-color: transparent;
-    touch-action: manipulation;
-    position: absolute;
-    z-index: 1;
-    top: 50%;
-    transform: translateY(-50%);
-    border: 0;
-    width: 30px;
-    height: 30px;
-    justify-content: center;
-    align-items: center;
-    fill: #FFF501;
-    padding: 0;
-  }
-  
-  .embla__button:disabled {
-    cursor: default;
-    opacity: 0.3;
-  }
-  
-  .embla__button__svg {
-    width: 100%;
-    height: 100%;
-  }
-  
-  .embla__button--prev {
-    left: 8%;
-  }
-  
-  .embla__button--next {
-    right: 8%;
-  }
+  border: 0;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  fill: #fff501;
+  padding: 0;
+}
 
-  .home-button {
-    outline: 0;
-    cursor: pointer;
-    background-color: transparent;
-    touch-action: manipulation;
-    width: 40px;
-    height: 40px;
-    margin-right: 5px;
-    position: fixed;
-    z-index: -1;
-  } 
+.embla__button:disabled {
+  cursor: default;
+  opacity: 0.3;
+}
+
+.embla__button__svg {
+  width: 100%;
+  height: 100%;
+}
+
+.embla__button--prev {
+  left: 0;
+  transform: translate(0, -50%);
+}
+
+.embla__button--next {
+  right: 0;
+  transform: translate(0, -50%);
+}
+
+.home-button {
+  outline: 0;
+  cursor: pointer;
+  background-color: transparent;
+  touch-action: manipulation;
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+  /* position: fixed; */
+  /* z-index: -1; */
+}
 
 .info {
-  /* width: 300px;
-  height: 300px;   
   position: absolute;
-  top: 10vw;
-  left: 50%;
-  transform: translate(-50%); */
-  
-  border: 4px solid yellow; 
+
+  border: 4px solid yellow;
   color: transparent;
   transition: color 0.1s ease, background-color 0.1s ease;
-  
+
   display: flex;
   align-items: center;
   justify-content: center;
